@@ -1,0 +1,15 @@
+- name: test
+  helm:
+    values:
+      replication: false
+  clusterSelector:
+    matchLabels:
+      env: test
+
+- name: prod
+  helm:
+    values:
+      replicas: 3
+  clusterSelector:
+    matchLabels:
+      env: prod
