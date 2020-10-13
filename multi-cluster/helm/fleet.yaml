@@ -10,6 +10,13 @@
   helm:
     values:
       replicas: 3
+      replication: true
   clusterSelector:
     matchLabels:
       env: prod
+  # Match cluster groups using selector
+  # clusterGroupSelector:
+  #   matchLabels:
+  #     region: us-east
+  # Match cluster group by name
+  # clusterGroup: group1
