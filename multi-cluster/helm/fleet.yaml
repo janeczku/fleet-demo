@@ -1,3 +1,5 @@
+namespace: fleet-mc-helm-example
+targetCustomizations:
 - name: test
   helm:
     values:
