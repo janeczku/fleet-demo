@@ -1,6 +1,6 @@
-defaultNamespace: ingress-nginx
+defaultNamespace: grafana
 helm:
-  releaseName: ingress-nginx
-  repo: https://kubernetes.github.io/ingress-nginx
-  chart: ingress-nginx
-  version: 4.0.3
+  releaseName: grafana-release
+  repo: https://grafana.github.io/helm-charts
+  chart: grafana
+  version: 7.3.8
